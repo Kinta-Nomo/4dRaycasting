@@ -35,7 +35,6 @@ export class Triangle{
     checkCollideTriangle(C, P){
         let I = this.checkCollidePlane(C, P)
         if (!I){
-            // console.log(I);
             return;
         }
         
@@ -55,9 +54,7 @@ export class Triangle{
         if (den){
             let s = (uv*wv-vv*wu)/den
             let t = (uv*wu-uu*wv)/den
-            // console.log([s,t]);
             if (s >= 0 && t >= 0 && s+t<=1){
-                // console.log((I.x-C.x)**2+(I.y-C.y)**2+(I.z-C.z)**2);
                 return ((I.x-C.x)**2+(I.y-C.y)**2+(I.z-C.z)**2)
             }
         }

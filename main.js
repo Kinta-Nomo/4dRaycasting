@@ -63,7 +63,7 @@ function drawImage(image){
 
 document.addEventListener( "keydown", function(key){
     // alert(9)
-    let speed = 3;
+    let speed = 5;
     if (key.keyCode == 87){
         camera.position.z += speed
     }

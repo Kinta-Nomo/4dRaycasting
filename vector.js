@@ -4,6 +4,8 @@ export function Vector(x, y, z){
     this.y = y;
     this.z = z;
 }
+
+
 export function subtract(vector1, vector2){
     return new Vector(vector1.x-vector2.x, vector1.y-vector2.y, vector1.z-vector2.z);
 }
